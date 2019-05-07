@@ -1,0 +1,17 @@
+AcmTest\Web\Router\home:
+    path: '/'
+    type: 'segment'
+    parameters:
+        - 'action'
+        - 'id'
+    defaults:
+        action: 'index'
+
+AcmTest\Web\Router\foo:
+    path: '/foo'
+    type: 'segment'
+    parameters:
+        - 'action'
+        - 'id'
+    defaults:
+        action: 'index'

@@ -1,0 +1,44 @@
+{
+    "name": "rindow/rindow-web-router",
+    "type": "library",
+    "description": "Rindow web routing engine",
+    "keywords": ["rindow","framework","web","routing"],
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3",
+        "interop-phpobjects/lenient-web": "*",
+        "rindow/rindow-stdlib": "*"
+    },
+    "require-dev": {
+        "interop-phpobjects/lenient-web": "*",
+        "rindow/rindow-stdlib": "*",
+        "rindow/rindow-web-http": "*",
+        "rindow/rindow-container": "*",
+        "rindow/rindow-annotation": "*",
+        "rindow/rindow-module-yaml": "*"
+    },
+    "suggest": {
+        "rindow/rindow-container": "It needs some service container",
+        "rindow/rindow-web-http": "Default http message library",
+        "rindow/rindow-annotation": "When using annotations",
+        "rindow/rindow-module-yaml": "When using Yaml"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rindow\\Web\\Http\\": "src/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://rindow.github.io/rindow-packagist/packages.json",
+            "options": {
+                "ssl": {
+                    "verify_peer": "true"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "dev"
+}
